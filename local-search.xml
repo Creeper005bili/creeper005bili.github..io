@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>对于 vivo Y3 (PD1901) 的bootloader解锁的初步尝试（下）</title>
+    <link href="/2025/01/23/post/"/>
+    <url>/2025/01/23/post/</url>
+    
+    <content type="html"><![CDATA[<p>经过一系列尝试后，最终终于放弃。</p><h1 id="第一次尝试"><a href="#第一次尝试" class="headerlink" title="第一次尝试"></a>第一次尝试</h1><p>使用一般工具（下载详见<strong>上期</strong>），通过<strong>音量上下键加插线</strong>的方式进入Preloader，但由于这种方式过于<em>不稳定</em>，不能保证每次都读到端口，就放弃了</p><h1 id="第二次尝试"><a href="#第二次尝试" class="headerlink" title="第二次尝试"></a>第二次尝试</h1><p>将后盖拆卸（塑料<del>纸皮</del>后盖），使用刀片划开黑胶，因为这部机器是后置指纹，所以会有指纹排线，注意不要弄断<del>（不是你都要解锁了还用指纹吗？）</del>。在拆下后盖后，将<strong>中框</strong>同时拆卸下来。</p><p>使用螺丝刀拆下主板外屏蔽罩，找到短接点<br><strong>（无图，四个金色触点中最下面的单点，另外一侧接屏蔽罩）</strong><br>经测试可以稳定读取端口，但问题是vivo似乎对底层做了修改，所以导致无法将preloader crash到brom。</p><h1 id="第三次尝试"><a href="#第三次尝试" class="headerlink" title="第三次尝试"></a>第三次尝试</h1><p>使用TFT工具，读取到端口触发了一次解锁流程，但未成功<del>（我把线拔了我以为没读取到呜呜呜）</del>，随后无法再次读取。</p><p>在短接过程中闻到了一股糊味，猜测是某处击穿，但由于机器还能正常使用，就没有管。</p><p><strong>（vivo拉的这坨屎这要是炸了我都tm夸它响）</strong></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>喜报</title>
     <link href="/2024/12/22/hello-world/"/>
     <url>/2024/12/22/hello-world/</url>
